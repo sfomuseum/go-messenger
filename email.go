@@ -20,6 +20,7 @@ func init() {
 
 	for _, uri := range sender.Schemes() {
 		s := strings.Replace(uri, "://", "", 1)
+		s = fmt.Sprintf("email-%s", s)
 		RegisterDeliveryAgent(ctx, s, NewEmailDeliveryAgent)
 	}
 }

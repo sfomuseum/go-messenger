@@ -8,7 +8,7 @@ type NullDeliveryAgent struct {
 	DeliveryAgent
 }
 
-func init(){
+func init() {
 	ctx := context.Background()
 	RegisterDeliveryAgent(ctx, "null", NewNullDeliveryAgent)
 }

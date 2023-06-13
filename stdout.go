@@ -9,7 +9,7 @@ type StdoutDeliveryAgent struct {
 	DeliveryAgent
 }
 
-func init(){
+func init() {
 	ctx := context.Background()
 	RegisterDeliveryAgent(ctx, "stdout", NewStdoutDeliveryAgent)
 }
