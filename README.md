@@ -1,6 +1,6 @@
 # go-messenger
 
-Opinionated Go package for delivering to-from-subject-body style messages.
+Opinionated Go package providing interfaces and implementations for delivering to-from-subject-body style messages.
 
 ## Documentation
 
