@@ -3,6 +3,7 @@ package messenger
 import (
 	"context"
 	"fmt"
+	"net/url"
 	"strings"
 
 	"github.com/aaronland/gomail-sender"
@@ -27,7 +28,15 @@ func init() {
 
 func NewEmailDeliveryAgent(ctx context.Context, uri string) (DeliveryAgent, error) {
 
-	s, err := sender.NewSender(ctx, uri)
+	u, err := url.Parse(uri)
+
+	if err != nil {
+		return nil, fmt.Errorf("Failed to parse URI, %w", err)
+	}
+
+	u.Scheme = strings.TrimLeft(u.Scheme, "email-")
+
+	s, err := sender.NewSender(ctx, u.String())
 
 	if err != nil {
 		return nil, fmt.Errorf("Failed to create new email sender, %w", err)
