@@ -78,7 +78,7 @@ func NewDeliveryAgent(ctx context.Context, uri string) (DeliveryAgent, error) {
 }
 
 // Schemes returns the list of schemes that have been registered.
-func Schemes() []string {
+func AgentSchemes() []string {
 
 	ctx := context.Background()
 	schemes := []string{}
