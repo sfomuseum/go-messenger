@@ -25,14 +25,14 @@ var register_map = map[string]bool{}
 func init() {
 
 	ctx := context.Background()
-	err := RegisterSchemes(ctx)
+	err := RegisterEmailSchemes(ctx)
 
 	if err != nil {
 		panic(err)
 	}
 }
 
-func RegisterSchemes(ctx context.Context) error {
+func RegisterEmailSchemes(ctx context.Context) error {
 
 	for _, uri := range sender.Schemes() {
 
