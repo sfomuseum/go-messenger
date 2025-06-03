@@ -2,8 +2,8 @@ github.com/aaronland/go-roster v1.0.0 h1:FRDGrTqsYySKjWnAhbBGXyeGlI/o5/t9FZYCbUm
 github.com/aaronland/go-roster v1.0.0/go.mod h1:KIsYZgrJlAsyb9LsXSCvlqvbcCBVjCSqcQiZx42i9ro=
 github.com/aaronland/gomail-sender v1.0.1 h1:SrXsZmorKgeWWf7O20063GjVQAw7x+/A3w97B4EePAI=
 github.com/aaronland/gomail-sender v1.0.1/go.mod h1:Cl0XMpTMcCKSxbUIlzj61allbbig+Qe3GO0YzLPgASg=
-github.com/aaronland/gomail/v2 v2.0.8 h1:pTHK0/Q7Xctz2/HcG3pa3SH8DS9kNW/f/kmvPPTJmq0=
-github.com/aaronland/gomail/v2 v2.0.8/go.mod h1:EW4vlCrGmTlJm5vu6BJbkATC8xzqicURtJjoWSX0FWM=
+github.com/aaronland/gomail/v2 v2.0.9 h1:Bsyy/Qbn56QMZbASIIpwgqqu3MABmk/zpxV/+B4bDNc=
+github.com/aaronland/gomail/v2 v2.0.9/go.mod h1:6/J6AB3C/OHLp1y0phjPtNKNoZRsBMCOmmOp5Vz1Mp8=
 github.com/gen2brain/beeep v0.0.0-20240516210008-9c006672e7f4 h1:ygs9POGDQpQGLJPlq4+0LBUmMBNox1N4JSpw+OETcvI=
 github.com/gen2brain/beeep v0.0.0-20240516210008-9c006672e7f4/go.mod h1:0W7dI87PvXJ1Sjs0QPvWXKcQmNERY77e8l7GFhZB/s4=
 github.com/go-toast/toast v0.0.0-20190211030409-01e6764cf0a4 h1:qZNfIGkIANxGv/OqtnntR4DfOY2+BgwR60cAcu/i3SE=

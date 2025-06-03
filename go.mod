@@ -5,7 +5,7 @@ go 1.23
 require (
 	github.com/aaronland/go-roster v1.0.0
 	github.com/aaronland/gomail-sender v1.0.1
-	github.com/aaronland/gomail/v2 v2.0.8
+	github.com/aaronland/gomail/v2 v2.0.9
 	github.com/gen2brain/beeep v0.0.0-20240516210008-9c006672e7f4
 	github.com/sfomuseum/go-flags v0.10.0
 	github.com/sfomuseum/go-slack v1.2.0
