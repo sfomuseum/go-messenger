@@ -43,14 +43,14 @@ github.com/sergeymakinen/go-ico/internal/icondir
 ## explicit; go 1.22
 github.com/sfomuseum/go-flags/flagset
 github.com/sfomuseum/go-flags/multi
-# github.com/sfomuseum/go-slack v1.2.1
+# github.com/sfomuseum/go-slack v1.2.2
 ## explicit; go 1.25.0
 github.com/sfomuseum/go-slack
 # github.com/tadvi/systray v0.0.0-20190226123456-11a2b8fa57af
 ## explicit
 github.com/tadvi/systray
-# golang.org/x/sys v0.35.0
-## explicit; go 1.23.0
+# golang.org/x/sys v0.40.0
+## explicit; go 1.24.0
 golang.org/x/sys/windows
 golang.org/x/sys/windows/registry
 # gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc

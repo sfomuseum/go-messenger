@@ -8,7 +8,7 @@ require (
 	github.com/aaronland/gomail/v2 v2.0.9
 	github.com/gen2brain/beeep v0.11.2
 	github.com/sfomuseum/go-flags v0.12.1
-	github.com/sfomuseum/go-slack v1.2.1
+	github.com/sfomuseum/go-slack v1.2.2
 )
 
 require (
@@ -21,6 +21,6 @@ require (
 	github.com/sergeymakinen/go-bmp v1.0.0 // indirect
 	github.com/sergeymakinen/go-ico v1.0.0-beta.0 // indirect
 	github.com/tadvi/systray v0.0.0-20190226123456-11a2b8fa57af // indirect
-	golang.org/x/sys v0.35.0 // indirect
+	golang.org/x/sys v0.40.0 // indirect
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
 )
