@@ -29,6 +29,25 @@ func RunWithFlagSet(ctx context.Context, fs *flag.FlagSet) error {
 
 func RunWithOptions(ctx context.Context, opts *RunOptions) error {
 
+	if len(opts.To) == 0 {
+
+		msg := &messenger.Message{
+			From:    opts.From,
+			Subject: opts.Subject,
+			Body:    opts.Body,
+		}
+
+		err := opts.DeliveryAgent.DeliverMessage(ctx, msg)
+
+		if err != nil {
+			slog.Error("Failed to deliver message", "error", err)
+			return err
+		}
+
+		slog.Debug("Message delivered")
+		return nil
+	}
+
 	wg := new(sync.WaitGroup)
 
 	for _, to := range opts.To {
@@ -52,7 +71,7 @@ func RunWithOptions(ctx context.Context, opts *RunOptions) error {
 				slog.Error("Failed to deliver message", "to", to, "error", err)
 			}
 
-			slog.Info("Message delivered", "to", to)
+			slog.Debug("Message delivered", "to", to)
 		}(to)
 	}
 
